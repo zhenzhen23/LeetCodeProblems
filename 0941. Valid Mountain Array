@@ -1,5 +1,5 @@
 //time: O(n)
-//space: O()
+//space: O(n)
 
 class Solution {
     public boolean validMountainArray(int[] arr) {
@@ -15,6 +15,6 @@ class Solution {
         while(end > 0 && arr[end] < arr[end - 1]){
             end--;
         }
-        return start == end && start !=0 && end != l -1;
+        return start == end && start != 0 && end != l -1;
     }
 }
